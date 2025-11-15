@@ -12,16 +12,17 @@ REF3 = "egg"
 
 
 def longestCommonPrefix(strs: list[str]) -> str:
-    # Check content of strs
     if not strs:
         return ""
     if len(strs) == 1:
-        return strs.pop()
+        return strs[0]
+
+    # Make sure there is at least one non-empty string
     max_len = 0
     for word in strs:
         if len(word) > max_len:
             max_len = len(word)
-    if max_len == 0:
+    if max_len == 0:  # Changed from assert to return
         return ""
 
     freq = dict.fromkeys(list(ascii_lowercase), 0)
@@ -29,8 +30,9 @@ def longestCommonPrefix(strs: list[str]) -> str:
     # a. Check early if there is no common prefixes
     # Prepare dict of frequencies
     for word in strs:
-        starting_letter = word[0].lower()
-        freq[starting_letter] += 1
+        if word:  # Check if word is not empty
+            starting_letter = word[0].lower()
+            freq[starting_letter] += 1
 
     # Remove words with single prefix
     double = freq.copy()
@@ -42,40 +44,18 @@ def longestCommonPrefix(strs: list[str]) -> str:
     if not freq:
         return ""
 
-    # b. Get the longest prefix
-    i = 2
-    prefixes = dict()
-    words = list(strs)
+    # b. Get the longest prefix - SIMPLIFIED approach
+    min_len = min(len(s) for s in strs if s)  # Get minimum length of non-empty strings
 
-    res = []
-    init_max = max(freq.values())
-    for pref in freq:
-        if freq[pref] == init_max:
-            res.append(pref)
+    # Compare character by character
+    for i in range(min_len):
+        char = strs[0][i]
+        for j in range(1, len(strs)):
+            if strs[j][i] != char:
+                return strs[0][:i]
 
-    while i <= max_len:
-
-        for word in words:
-            pref = word[:i]
-            if pref not in prefixes:
-                prefixes[pref] = 0
-            prefixes[pref] += 1
-
-        double = prefixes.copy()
-        for pref in prefixes:
-            if prefixes[pref] > 1:
-                continue
-            double.pop(pref)
-        prefixes = double
-
-        if not prefixes:
-            break
-
-        res = list(prefixes.keys())
-
-        i += 1
-
-    return str(max(res, key=len))
+    # Return the prefix up to the shortest string length
+    return strs[0][:min_len]
 
 
 def test_out_1():

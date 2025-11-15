@@ -1,0 +1,30 @@
+t = ["+7", "+6", "+5", "+4"]
+a = dict.fromkeys(t, "country code")
+# print(a)
+a.clear()
+# print(a)
+d = {True: 1, False: "False", "list": [1,2,3], 5:5}
+d2 = d.copy()
+# print(id(d) == id(d2))
+d2[True] = False
+# print(d, d2)
+# print(d.get('list'))
+# print(d.get('list2'))
+# print(d['list2'])
+# print(d.get(3, False))
+
+print(d)
+print(d.setdefault("Smth"))
+print(d)
+print(d.setdefault("Smth"))
+print(d)
+del d['Smth']
+print(d)
+d.setdefault('Smth', 'something')
+print(d)
+d.pop('Smth')
+print(d)
+print(d.pop('Smth', False))
+print(d)
+print(d.popitem())
+print(d)

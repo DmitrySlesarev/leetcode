@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87ac948f-bcd4-4493-be7d-5c359790956f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basics/ex2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/exercises.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/exercises.iml" afterDir="false" />
+    <list default="true" id="87ac948f-bcd4-4493-be7d-5c359790956f" name="Changes" comment="Add new exercises">
+      <change afterPath="$PROJECT_DIR$/basics/ex3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basics/ex4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basics/ex5.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex1.py" beforeDir="false" afterPath="$PROJECT_DIR$/basics/ex1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/op1.py" beforeDir="false" afterPath="$PROJECT_DIR$/oop/op1.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,9 +29,9 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/basics/ex1.py" root0="FORCE_HIGHLIGHTING" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="32e3JZQuyJysk2Rvsvvuy3FYcII" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -43,15 +43,23 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Python.ex1.executor": "Run",
     "Python.ex2.executor": "Run",
+    "Python.ex3.executor": "Run",
+    "Python.ex4.executor": "Run",
+    "Python.ex5.executor": "Run",
+    "Python.op1.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "last_opened_file_path": "/home/messer/PycharmProjects/exercises/basics",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/basics" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/basics" />
     </key>
@@ -64,6 +72,19 @@
       <option name="presentableId" value="Default" />
       <updated>1757767139449</updated>
     </task>
+    <task id="LOCAL-00001" summary="Add new exercises">
+      <option name="closed" value="true" />
+      <created>1757773041555</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1757773041555</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add new exercises" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add new exercises" />
   </component>
 </project>

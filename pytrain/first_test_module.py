@@ -1,0 +1,3 @@
+
+def test_first(five: int) -> None:
+    ...

@@ -1,0 +1,33 @@
+import numpy as np
+
+
+if __name__ == "__main__":
+    # a = np.array([1,2,3,4])
+    # print(a)
+    # a = np.array([1,2,3,4], 'float64')
+    # print(a)
+    # print(np.sctypeDict)
+    # print(len(np.sctypeDict))
+    # a = np.array([1,2,3,4], 'uintc')
+    # print(a)
+    # a = np.array([1,2,3,4], 'str_')
+    # print(a)
+    # print(np.complex64(10))
+    # print(np.int16(10.5))
+    # # a = np.array([1,2,5000,1000], dtype='int8')
+    # # print(a)
+    # a = np.array([1,2,5000,1000])
+    # print(a)
+    # # print(np.complex64(a))
+    # b = np.complex64(a)
+    # print(b)
+    # c = np.int32(b)
+    # print("***")
+    # print(c)
+    # print(np.array( (1,2,3)))
+    # print(np.array("hello"))
+
+    a = np.array([[1,2], [3,4], [5,6]])
+    print(a)
+    a = np.array([[1,2], [3,4], [5,6,7]])
+    print(a)

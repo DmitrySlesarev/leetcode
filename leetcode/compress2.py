@@ -6,22 +6,26 @@ class Solution:
         if len(chars) == 1:
             return 1
 
-        code_dict = dict()
-        for char in chars:
-            if char not in code_dict:
-                code_dict[char] = 1
-            else:
-                code_dict[char] += 1
+        write_pos = 0
+        read_pos = 0
 
-        res = []
-        for key, val in code_dict.items():
-            res.append(str(key))
-            if val == 1:
-                continue
-            res.append(str(val))
+        while read_pos < len(chars):
+            curr_char = chars[read_pos]
+            count = 0
 
-        return len("".join(res))
+            while read_pos < len(chars) and chars[read_pos] == curr_char:
+                read_pos += 1
+                count += 1
 
+            chars[write_pos] = curr_char
+            write_pos += 1
+
+            if count > 1:
+                for digit in str(count):
+                    chars[write_pos] = digit
+                    write_pos += 1
+
+        return write_pos
 
 class TestSolution:
     def test_compress_chars_eq_six(self):
